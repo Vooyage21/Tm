@@ -1,26 +1,4 @@
-"""
-MIT License
 
-Copyright (c) 2022 Arsh
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-"""
 
 import logging
 import os
@@ -36,7 +14,6 @@ from pymongo import MongoClient
 from pyrogram import Client
 from pyrogram.errors.exceptions.bad_request_400 import ChannelInvalid, PeerIdInvalid
 from Python_ARQ import ARQ
-from redis import StrictRedis
 from telegram import Chat
 from telegraph import Telegraph
 from telethon import TelegramClient
@@ -103,8 +80,7 @@ if ENV:
         "TEMP_DOWNLOAD_DIRECTORY", "./"
     )  # Don't Change
     REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None)
-    MONGO_DB_URL = os.environ.get("MONGO_DB_URL", None)
-    REDIS_URL = os.environ.get("REDIS_URL", None)
+    MONGO_DB_URL = os.environ.get("MONGO_DB_URL", None) 
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", None)
     UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", None)
     BOT_USERNAME = os.environ.get("BOT_USERNAME", "")
@@ -155,8 +131,7 @@ else:
     LOAD = Config.LOAD
     NO_LOAD = Config.NO_LOAD
     MONGO_DB_URL = Config.MONGO_DB_URL
-    MONGO_DB = Config.MONGO_DB
-    REDIS_URL = Config.REDIS_URL
+    MONGO_DB = Config.MONGO_DB    
     SUPPORT_CHAT = Config.SUPPORT_CHAT
     UPDATES_CHANNEL = Config.UPDATES_CHANNEL
     REM_BG_API_KEY = Config.REM_BG_API_KEY
@@ -167,20 +142,6 @@ else:
 
 SUDO_USERS.add(OWNER_ID)
 DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(5852955057)
-
-REDIS = StrictRedis.from_url(REDIS_URL, decode_responses=True)
-
-try:
-    REDIS.ping()
-    LOGGER.info("Your redis server is now alive!")
-
-except BaseException:
-    raise Exception("Your redis server is not alive, please check again.")
-
-finally:
-    REDIS.ping()
-    LOGGER.info("Your redis server is now alive!")
 
 
 # Credits Logger
