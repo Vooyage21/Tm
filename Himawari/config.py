@@ -39,34 +39,34 @@ class Config(object):
     TEMP_DOWNLOAD_DIRECTORY = "./"
     LOAD = ""
     NO_LOAD = ""  # put some module name here if you do not want it to load
-    MONGO_DB = "Himawari"
+    MONGO_DB = "Helmi4636"
     BOT_API_URL = "https://api.telegram.org/bot"
 
     # you can change these
     DEL_CMDS = False  # set it to true if you want the "/" commands to be deleted
     INFOPIC = True  # picture while doing /info
     STRICT_GBAN = True  # IF YOU WANT TO ENABLE GBAN SYSTEM
-    API_ID = 681  # api id from my.telegram.org
-    API_HASH = "45aabfacadsdsds"  # api hash from my.telegram.org
+    API_ID =  # api id from my.telegram.org
+    API_HASH = ""  # api hash from my.telegram.org
     # mongo database link (necessary)
-    MONGO_DB_URL = "mongodb+srv://mesdsdwhidsdsgodb.net/?retryWrites=true&w=majority"
-    DB_URL = "postgresql://wdsdsw@ldsas/wasassddb"  # postgres sql database link
+    MONGO_DB_URL = "mongodb+srv://Xyxx:Helmi4636@cluster0.9yy5ve9.mongodb.net/?retryWrites=true&w=majority"
+    DB_URL = "postgres://thpyouro:Xt9VN1Ybhm9bs8SBk-DU6Jwd6nt_BuGn@bubble.db.elephantsql.com/thpyouro"  # postgres sql database link
     # redis database url from redislabs.com
-    REDIS_URL = "redis://dsds3@reddsdsuth-1-1.ec2.cloud.redislabs.com:154dsd/Arssddsdsb"
+    REDIS_URL = "http://redis-19497.c281.us-east-1-2.ec2.cloud.redislabs.com:19497"
     TOKEN = "54dssdV8e59Odo"  # bot token from @BotFather
-    DEV_USERS = [5852955057]  # developers id
-    SUDO_USERS = [9656]  # sudo users id
-    SUPPORT_USERS = [1909]  # support user ids
-    WHITELIST_USERS = [2112, 1212]  # commas for multiple ids
-    EVENT_LOGS = -100159  # channel id for gban logs
-    OWNER_ID = 5852955057  # owner id in integer
-    ERROR_LOGS = -1001  # support group id
-    BOT_NAME = "Himawari"  # your bot name
+    DEV_USERS = [940232666]  # developers id
+    SUDO_USERS = [940232666]  # sudo users id
+    SUPPORT_USERS = [940232666]  # support user ids
+    WHITELIST_USERS = [940232666]  # commas for multiple ids
+    EVENT_LOGS =   # channel id for gban logs
+    OWNER_ID = 940232666  # owner id in integer
+    ERROR_LOGS =  # support group id
+    BOT_NAME = "Mizu Robot"  # your bot name
     ARQ_API_KEY = "SLSFXSsdUXNSMH-ARQ"  # ARQ api key from @ARQRobot
-    ARQ_API_URL = "arq.hamker.dev"  # arq link
+    ARQ_API_URL = "http://thearq.tech/"  # arq link
     SUPPORT_CHAT = "Ignidsn"  # support group username without @
     UPDATES_CHANNEL = "Igsd"  # Updates/News Channel username without @
-    BOT_USERNAME = "Himawari_Robot"  # bot username without @
+    BOT_USERNAME = ""  # bot username without @
     REM_BG_API_KEY = "K2dsdsYma6cZx"  # not necessary
 
 
