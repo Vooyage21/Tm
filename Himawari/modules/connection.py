@@ -34,10 +34,8 @@ from Himawari import DEV_USERS, SUDO_USERS, dispatcher
 from Himawari.modules.helper_funcs import chat_status
 from Himawari.modules.helper_funcs.alternate import send_message, typing_action
 
-user_admin = chat_status.user_admin
 
 
-@user_admin
 @typing_action
 def allow_connections(update, context) -> str:
     chat = update.effective_chat
