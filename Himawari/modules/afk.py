@@ -28,7 +28,6 @@ from telegram import MessageEntity
 from telegram.error import BadRequest
 from telegram.ext import Filters, MessageHandler
 
-from Himawari import REDIS, dispatcher
 from Himawari.modules.disable import DisableAbleCommandHandler
 from Himawari.modules.helper_funcs.readable_time import get_readable_time
 from Himawari.modules.sql.afk_redis import afk_reason, end_afk, is_user_afk, start_afk
