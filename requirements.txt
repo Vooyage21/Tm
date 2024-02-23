@@ -1,7 +1,6 @@
 aiofiles
 aiogram
 aiohttp[speedups]
-aioredis
 alphabet_detector
 APScheduler~=3.6.3
 beautifulsoup4==4.9.1
@@ -78,7 +77,6 @@ pytube
 pytz
 pyYAML>=5.1.2
 pySmartDL
-redis
 regex
 requests
 requests_html
