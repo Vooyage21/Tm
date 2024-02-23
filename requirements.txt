@@ -68,7 +68,7 @@ pymongo==3.12.3
 pynewtonmath
 pyOpenSSL==22.1.0
 pyrate-limiter
-pyrogram==2.0.52
+pyrogram==1.4.7
 python-arq
 python-dotenv
 python-rapidjson
@@ -87,7 +87,7 @@ secureme
 selenium
 speedtest-cli
 spongemock
-sqlalchemy==1.3.20
+sqlalchemy==1.4.40
 telegraph
 telethon==1.24.0
 textblob
